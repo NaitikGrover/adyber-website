@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight, Loader2, Check } from 'lucide-react';
 
 interface FooterProps {
-  onNavigate: (page: string) => void;
+  onNavigate: (page: string, sectionId?: string) => void;
 }
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
@@ -81,22 +81,27 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h4 className="text-white font-semibold mb-6">Company</h4>
             <ul className="space-y-4 text-sm text-gray-400">
               <li>
-                <button onClick={() => onNavigate('home')} className="hover:text-brand-lime transition-colors">
+                <button onClick={() => onNavigate('home', 'about')} className="hover:text-brand-lime transition-colors">
                   About Us
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('home')} className="hover:text-brand-lime transition-colors">
+                <button onClick={() => onNavigate('home', 'pricing')} className="hover:text-brand-lime transition-colors">
                   Pricing
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('home')} className="hover:text-brand-lime transition-colors">
+                <button onClick={() => onNavigate('home', 'services')} className="hover:text-brand-lime transition-colors">
                   Services
                 </button>
               </li>
               <li>
-                <button onClick={() => onNavigate('home')} className="hover:text-brand-lime transition-colors">
+                <button onClick={() => onNavigate('home', 'testimonials')} className="hover:text-brand-lime transition-colors">
+                  Testimonials
+                </button>
+              </li>
+              <li>
+                <button onClick={() => onNavigate('home', 'faq')} className="hover:text-brand-lime transition-colors">
                   FAQ
                 </button>
               </li>

@@ -12,6 +12,7 @@ import TermsOfService from './components/TermsOfService';
 import GetStarted from './components/GetStarted';
 import WhatsAppButton from './components/WhatsAppButton';
 import NotFound from './components/NotFound';
+import Testimonials from './components/Testimonials';
 
 import ApplyPage from './components/ApplyPage';
 
@@ -87,6 +88,7 @@ function App() {
             <Gallery />
             <Pricing onNavigate={navigateTo} />
             <About />
+            <Testimonials />
             <FAQ />
           </>
         )}

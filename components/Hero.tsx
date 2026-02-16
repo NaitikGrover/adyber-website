@@ -16,14 +16,14 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
 
         {/* New Offer Badge */}
         <div
-          onClick={() => onNavigate('bookings', undefined, 'Content Creation - Pro - ₹4,999')}
+          onClick={() => onNavigate('bookings', undefined, 'Content Creation - Pro - $180')}
           className="inline-flex items-center gap-2 p-1 pr-4 rounded-full bg-white/5 border border-white/10 mb-8 sm:mb-10 animate-fade-in-up hover:border-brand-lime/50 transition-colors cursor-pointer group max-w-full"
         >
           <span className="bg-brand-lime text-black text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full uppercase tracking-wider flex-shrink-0">
             New Offer
           </span>
           <span className="text-xs sm:text-sm text-gray-300 group-hover:text-brand-lime transition-colors flex items-center gap-1 truncate">
-            Launch for ₹4,999 <ArrowRight size={14} className="flex-shrink-0" />
+            Launch for $180 <ArrowRight size={14} className="flex-shrink-0" />
           </span>
         </div>
 

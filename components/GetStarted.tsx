@@ -6,24 +6,24 @@ const packages = [
   {
     category: 'Content Creation',
     options: [
-      { tier: 'Starter', price: '₹2,999' },
-      { tier: 'Pro', price: '₹4,999' },
+      { tier: 'Starter', price: '$99' },
+      { tier: 'Pro', price: '$180' },
       { tier: 'Enterprise', price: 'Custom' }
     ]
   },
   {
     category: 'Website Development',
     options: [
-      { tier: 'Starter', price: '₹7,999' },
-      { tier: 'Pro', price: '₹17,999' },
+      { tier: 'Starter', price: '$149' },
+      { tier: 'Pro', price: '$499' },
       { tier: 'Enterprise', price: 'Custom' }
     ]
   },
   {
     category: 'Digital Marketing',
     options: [
-      { tier: 'Starter', price: '₹9,999' },
-      { tier: 'Pro', price: '₹19,999' },
+      { tier: 'Starter', price: '$199' },
+      { tier: 'Pro', price: '$499' },
       { tier: 'Enterprise', price: 'Custom' }
     ]
   }
@@ -39,7 +39,7 @@ const GetStarted: React.FC<GetStartedProps> = ({ preSelectedPackage }) => {
     email: '',
     phone: '',
     instagram: '',
-    package: preSelectedPackage || 'Content Creation - Pro - ₹4,999',
+    package: preSelectedPackage || 'Content Creation - Pro - $180',
     message: ''
   });
 
@@ -98,7 +98,7 @@ const GetStarted: React.FC<GetStartedProps> = ({ preSelectedPackage }) => {
           email: '',
           phone: '',
           instagram: '',
-          package: 'Content Creation - Pro - ₹4,999',
+          package: 'Content Creation - Pro - $180',
           message: ''
         });
         setTimeout(() => setStatus('idle'), 5000);

@@ -11,30 +11,30 @@ const tiersByService: Record<string, PricingTier[]> = {
   web: [
     {
       name: 'Starter',
-      price: '₹7,999',
-      originalPrice: '₹14,999',
+      price: '$149',
+      originalPrice: '$249',
       features: [
         'Single Page Design',
         'Responsive Layout',
         'Basic SEO Setup',
         'Contact Form',
-        '1 Month Support',
+        '3 Month Support',
         'SSL Certificate'
       ],
       recommended: false,
     },
     {
       name: 'Pro',
-      price: '₹17,999',
-      originalPrice: '₹29,999',
+      price: '$499',
+      originalPrice: '$799',
       recommended: true,
       features: [
-        'Up to 5 Pages',
+        'Up to 7 Pages',
         'Custom UI/UX Design',
         'CMS Integration',
         'Advanced SEO',
         'Speed Optimization',
-        '3 Months Support'
+        '1 Year Support'
       ],
     },
     {
@@ -54,11 +54,11 @@ const tiersByService: Record<string, PricingTier[]> = {
   content: [
     {
       name: 'Starter',
-      price: '₹2,999',
-      originalPrice: '₹4,999',
+      price: '$99',
+      originalPrice: '$199',
       features: [
-        '20+ Branded Posts',
-        '2 Reels',
+        '15+ Branded Posts',
+        '10 Reels',
         'Daily Posting',
         'Clean Instagram Layout',
         'Caption + Hashtags',
@@ -68,12 +68,12 @@ const tiersByService: Record<string, PricingTier[]> = {
     },
     {
       name: 'Pro',
-      price: '₹4,999',
-      originalPrice: '₹9,999',
+      price: '$180',
+      originalPrice: '$299',
       recommended: true,
       features: [
-        '30+ Posts',
-        '6 Reels',
+        '20+ Posts',
+        '20 Reels',
         'Custom Brand Colors',
         'Better Grid Layout',
         'Growth-focused Captions',
@@ -97,8 +97,8 @@ const tiersByService: Record<string, PricingTier[]> = {
   marketing: [
     {
       name: 'Starter',
-      price: '₹9,999',
-      originalPrice: '₹14,999',
+      price: '$199',
+      originalPrice: '$299',
       features: [
         'Google Ads Setup',
         'Keyword Research',
@@ -111,8 +111,8 @@ const tiersByService: Record<string, PricingTier[]> = {
     },
     {
       name: 'Pro',
-      price: '₹19,999',
-      originalPrice: '₹29,999',
+      price: '$499',
+      originalPrice: '$699',
       recommended: true,
       features: [
         'Meta Ads Management',
