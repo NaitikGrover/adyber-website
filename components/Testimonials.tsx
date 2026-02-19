@@ -3,25 +3,22 @@ import { Star, Quote } from 'lucide-react';
 
 const testimonials = [
     {
-        name: 'Sarah Chen',
-        role: 'CEO, Bloom Media',
-        content: 'Adyber transformed our social presence completely. Our engagement grew by 300% in just two months. Their artistic vision is unmatched in the industry.',
+        name: 'Nandini Bhardwaj',
+        content: 'We worked with Adyber for our website and overall digital presence, and the results were solid. Communication was clear, deadlines were met, and everything was delivered exactly as discussed❤️',
         rating: 5,
-        initials: 'SC'
+        image: '/images/testimonials/nandini.png'
     },
     {
-        name: 'Marcus Thorne',
-        role: 'Founder, Urban Edge',
+        name: 'Avishi Kukreti',
         content: 'The most professional agency we\'ve worked with. They don\'t just design; they understand the psychology of growth. Our ROI has never been better.',
         rating: 5,
-        initials: 'MT'
+        image: '/images/testimonials/avishi.png'
     },
     {
-        name: 'Elena Rodriguez',
-        role: 'Director, Aura Wellness',
+        name: 'Shaurya Singh',
         content: 'Their web development team is incredible. They built a site that is not only beautiful but converts like crazy. Absolutely worth every penny.',
         rating: 5,
-        initials: 'ER'
+        image: '/images/testimonials/shaurya.png'
     }
 ];
 
@@ -49,27 +46,38 @@ const Testimonials: React.FC = () => {
                         >
                             <Quote className="absolute top-6 right-8 w-8 h-8 text-white/5 group-hover:text-brand-lime/10 transition-colors" />
 
-                            <div className="flex gap-1 mb-6">
-                                {[...Array(testimonial.rating)].map((_, i) => (
-                                    <Star key={i} size={16} className="fill-brand-lime text-brand-lime" />
-                                ))}
-                            </div>
-
-                            <p className="text-gray-300 mb-8 leading-relaxed italic">
-                                "{testimonial.content}"
-                            </p>
-
-                            <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-brand-lime to-brand-lime/50 flex items-center justify-center text-black font-bold text-sm">
-                                    {testimonial.initials}
-                                </div>
+                            <div className="flex items-center gap-4 mb-6">
+                                <img
+                                    src={testimonial.image}
+                                    alt={testimonial.name}
+                                    className="w-12 h-12 rounded-full object-cover border-2 border-brand-lime/20"
+                                />
                                 <div>
                                     <h4 className="text-white font-semibold text-sm">{testimonial.name}</h4>
-                                    <p className="text-gray-500 text-xs">{testimonial.role}</p>
+                                    <div className="flex gap-1 mt-1">
+                                        {[...Array(testimonial.rating)].map((_, i) => (
+                                            <Star key={i} size={14} className="fill-brand-lime text-brand-lime" />
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
+
+                            <p className="text-gray-300 leading-relaxed italic">
+                                "{testimonial.content}"
+                            </p>
                         </div>
                     ))}
+                </div>
+                <div className="mt-16 text-center">
+                    <a
+                        href="https://g.page/r/CVR02ZML1rRQEAI/review"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-brand-lime text-black text-sm font-bold hover:bg-white hover:scale-105 active:scale-95 transition-all duration-300 shadow-[0_0_20px_rgba(163,230,53,0.3)] hover:shadow-[0_0_30px_rgba(255,255,255,0.2)] group"
+                    >
+                        Review us on Google
+                        <Star className="w-4 h-4 fill-black group-hover:fill-black transition-colors" />
+                    </a>
                 </div>
             </div>
         </section>
